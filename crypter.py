@@ -1,14 +1,13 @@
 #
 # Simple Ceasar crypter-decrypter
-# Uses hardcoded shifting value (negative=backwards in letterlist)
-
+# Uses hardcoded shifting value (negative=backwards in letterlist,positive forward)
 
 
 #letter to be shifted value
 shifter=-4
 
 #alphabets to be used
-letters=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","å","ä","ö"]
+letters=[" ","1","2","3","4","5","6","7","8","9","0","-","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","å","ä","ö"]
 
 
 
@@ -24,13 +23,15 @@ def main():
             x=input()
         
             if (x=="1"):
-                print("Crypting")
+                #print("Crypting")
                 crypt()
+                menu()
             elif (x=="2"):
-                print("Decrypting")
+                #print("Decrypting")
                 decrypt()
+                menu()
             elif (x=="x"):
-                print ("Ending") 
+                #print ("Ending") 
                 break   
             else:
                 print ("Wrong selection")
@@ -38,7 +39,7 @@ def main():
  
  
 def menu():
-        print("Select operation")
+        print("*** Select operation ***")
         print("1-crypt")
         print("2-decrypt")
         print ("x - end") 
@@ -85,8 +86,7 @@ def decrypt():
 
     
 def decryptLetter(letter):              
-    location=(letters.index(letter))
-        
+    location=(letters.index(letter))     
     alphaslen=len(letters)
     z=location-shifter
     
