@@ -1,7 +1,7 @@
 #
 # Simple Ceasar crypter-decrypter ,  mika.nokka1@gmail.com Jan 2023
 # Uses defined letters array. Not defined letters in tobe-crypted message will be set as ?
-# Shifting value: negative=backwards in letterlist,positive forward. 0 does not crypt at all
+# Shifting value: negative=backwards in letterlist,positive forward. 0 does not crypt at all.
 #
 
 

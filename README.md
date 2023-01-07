@@ -3,7 +3,7 @@
 Uses defined letters array (letters, numbers), not defined letters will be set as ? when crypting the message   
 Letter shifting value: negative=backwards in letterlist, positive forwards. 0 does not crypt at all
 
-Execute: python3 crypter.py    
+Execute:  python3 crypter.py    
 
 Use menus for operations:    
 
